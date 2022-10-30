@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ice cream</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"><h1>Kool Spider</h1></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<!-- <li class="nav-item active">
+					<a class="nav-link" href="#">
+						Home <span class="sr-only">(current)</span>
+					</a>
+				</li> -->
+				<li class="nav-item pr-5">
+					<a class="nav-link" href="#">Menu</a>
+				</li>
+				<li class="nav-item pr-5">
+					<a class="nav-link" href="#">Whereabouts</a>
+				</li>
+				<li class="nav-item pr-5">
+					<a class="nav-link" href="#">Blog</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search Kool Spider" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍</button>
+			</form>
+		</div>
+	</nav>
+	<!-- Row causing overflow -->
+	<img id="hottest_ice_cream_image" 
+	src="Strawberry-cone.png" style="position: absolute; z-index: 2; 
+	margin-top: 8vh; margin-left: 44vw;"/>
+	<div class="row hottest 0" style="height: 100vh;">
+		<div id="hottest_left_parent" class="col-7 d-flex justify-content-center" style="background-color: white">
+			<!-- <div class="col d-flex justify-content-center"> -->
+			<div id="hottest_left_card" class="card mx-auto my-auto" style="width: 18rem; border-color: pink;">
+				<div id="hottest_left_card_header" class="card-header" style="background-color: pink">
+					⭐⭐⭐⭐⭐
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Pico De Gallo Fruit Salad</h5>
+					<p class="card-text">Lot of juice. Lot of juice. Lot of juice. Lot of juice. Lot of juice. Lot of juice. Lot of juice. Lot of juice. Lot of juice. Lot of juice.</p>
+					<!--  -->
+					<button id="hottest_left_card_body_button" href="#" class="btn" 
+					style="background-color: pink;">Try it!</button>
+				</div>
+			</div>
+		</div>
+		<div id="hottest_right_parent" class="col-5" style="background-color: pink">
+			<button id="prev" class="btn h-10">Prev</button>
+			<button id="next" class="btn">Next</button>
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+		const hottest_themes = 
+		[['white', 'pink', 'Strawberry-cone.png'], 
+		['brown', 'yellow', 'Chocolate-stick alt.png'], 
+		['orange', 'white', 'Vanilla-cone.png']];
+		$("#next").click(function() {
+			var itemNum = parseInt($('.hottest').attr('class').split(" ")[2]);
+			$('.hottest').removeClass(itemNum.toString());
+			if(itemNum < 2)
+				itemNum += 1;
+			else
+				itemNum = 0;
+			$('#hottest_left_parent').css('background-color', 
+				hottest_themes[itemNum][0]);
+			$('#hottest_left_card').css('border-color', 
+				hottest_themes[itemNum][1]);
+			$('#hottest_left_card_header').css('background-color', 
+				hottest_themes[itemNum][1]);
+			$('#hottest_left_card_body_button').css('background-color', 
+				hottest_themes[itemNum][1]);
+			$('#hottest_right_parent').css('background-color', 
+				hottest_themes[itemNum][1]);
+			$('.hottest').addClass(itemNum.toString());
+			$('#hottest_ice_cream_image').attr('src', hottest_themes[itemNum][2]);
+		});
+		$("#prev").click(function() {
+			var itemNum = parseInt($('.hottest').attr('class').split(" ")[2]);
+			$('.hottest').removeClass(itemNum.toString());
+			if(itemNum > 0)
+				itemNum -= 1;
+			else
+				itemNum = 2;
+			$('#hottest_left_parent').css('background-color', 
+				hottest_themes[itemNum][0]);
+			$('#hottest_left_card').css('border-color', 
+				hottest_themes[itemNum][1]);
+			$('#hottest_left_card_header').css('background-color', 
+				hottest_themes[itemNum][1]);
+			$('#hottest_left_card_body_button').css('background-color', 
+				hottest_themes[itemNum][1]);
+			$('#hottest_right_parent').css('background-color', 
+				hottest_themes[itemNum][1]);
+			$('.hottest').addClass(itemNum.toString());
+			$('#hottest_ice_cream_image').attr('src', hottest_themes[itemNum][2]);
+		});
+	});
+</script>
+</html>
