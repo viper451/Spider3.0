@@ -171,4 +171,22 @@ a.buy-btn{
 }
 */
 
+.swiper {
+  height: 60vh;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
