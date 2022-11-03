@@ -1,3 +1,5 @@
+/* Other Products */
+
 @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
 body{
   font-family: 'Muli', sans-serif;
@@ -163,13 +165,7 @@ a.buy-btn{
   }
 }
 
-/*@media screen and (min-width: 461px) {
-  .flavour-button {
-    width: 100%;
-  height: auto;
-  }
-}
-*/
+/* Reviews Swiper */
 
 .swiper {
   height: 60vh;
@@ -181,8 +177,78 @@ a.buy-btn{
   align-items: center;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #EDC7B7 !important;
+}
 
+/* Footer */
 
+footer {
+  background: #101010;
+  padding: 86px 0;
+}
+.single-content {
+  text-align: center;
+  padding: 115px 0;
+}
+.single-box p {
+  color: #fff;
+  line-height: 1.9;
+}
+.single-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.single-box .card-area i {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.card-area i:hover {
+  color: rgb(252, 189, 0);
+  }
+.single-box ul {
+  list-style: none;
+  padding: 0;
+}
+.single-box ul li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.5;
+  font-weight: 100;
+}
+.single-box h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.single-box ul li a:hover{
+    color: rgb(252, 189, 0);
+}
+#usernamebox {
+  background: #07d5f5;
+  color: #fff;
+}
+.socials i {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.socials i:hover{
+  color: rgb(252, 189, 0);
+}
+@media (max-width: 767px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
 
 
 
