@@ -1,0 +1,16 @@
+.swiper-pagination-bullet-active {
+  background-color: #AC3B61 !important;
+}
+
+.swiper-slide figcaption {
+  position: absolute;
+  bottom: 10vh;
+  color: #AC3B61;
+  background-color: #EDC7B7;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  padding: 3vh 10vh 2vh 10vh;
+  border-radius: 10%;
+}
