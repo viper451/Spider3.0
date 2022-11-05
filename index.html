@@ -25,14 +25,15 @@
 	href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 	/>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
 </head>
-<body style="background-color: #EDC7B7">
+<body style="background-color: #FFF8DC;">
 	<!-- Navbar -->
-	<div class="trending-section 0" style="background-color: #FFF8DC; height: 100vh; width: 100vw;">
+	<div class="trending-section 0">
 		<nav class="navbar navbar-expand-lg navbar-light w-100 pt-3" 
 		style="z-index: 2; background-color: #AC3B61;">
-			<h1 style="color: #EDC7B7; font-family: Kalam;"><img src="Spider 1.webp" width="60" height="60" />Spider Scoop</h1>
+			<h1 style="color: #EDC7B7; font-family: Kalam;"><img src="Spider 2.webp" width="60" height="60" />
+				Spider Scoop
+			</h1>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -54,64 +55,78 @@
 				</form>
 			</div>
 		</nav>
-		<div class="swiper">
-			<div class="swiper-wrapper" style="height: 80vh;">
+		<div style="height: 10vh; text-align: center; padding-top: 3vh;">
+			<h1 style="font-family: Kalam; color: #AC3B61;">
+				<strong>Our Coolest Scoops</strong>
+			</h1>
+		</div>
+		<div class="swiper ml-5 mr-5">
+			<div class="swiper-wrapper" style="height: 60vh;">
 				<div class="swiper-slide">
 					<img src="Carousel_Trending_Ice_creams/Image 1.webp" style="width:100%; height:100%;"/>
-					<figcaption style="font-family: Kalam;">
+					<!-- <figcaption style="font-family: Kalam;">
 						<h3>Sundae Delight</h3>
-					</figcaption>
+					</figcaption> -->
 				</div>
 				<div class="swiper-slide">
 					<img src="Carousel_Trending_Ice_creams/Image 2.jpg" style="width:100%; height:100%;"/>
-					<figcaption style="font-family: Kalam;">
+					<!-- <figcaption style="font-family: Kalam;">
 						<h3>Kidz Kone</h3>
-					</figcaption>
+					</figcaption> -->
 				</div>
 				<div class="swiper-slide">
 					<img src="Carousel_Trending_Ice_creams/Image 3.webp" style="width:100%; height:100%;"/>
-					<figcaption style="font-family: Kalam;">
+					<!-- <figcaption style="font-family: Kalam;">
 						<h3>Choco Sandwitch</h3>
-					</figcaption>
+					</figcaption> -->
 				</div>
 				<div class="swiper-slide">
 					<img src="Carousel_Trending_Ice_creams/Image 4.jpg" style="width:100%; height:100%;"/>
-					<figcaption style="font-family: Kalam;">
+					<!-- <figcaption style="font-family: Kalam;">
 						<h3>Sweet Cup</h3>
-					</figcaption>
+					</figcaption> -->
 				</div>
 			</div>
 			<!-- If we need pagination -->
 			<div style="color: black;" class="swiper-pagination"></div>
 		</div>
 	</div>
+	<br /><br />
+	<div class="what-makes-us-special" style="background-color: #BAB2B5; color: #123C69; height: 30vh; display: flex; 
+	justify-content: center; align-items: center;">
+		<div style="width: 100%; display: flex; justify-content: space-evenly; font-family: Kalam; color: #123C69;">
+			<div>
+				<img src="veg.png" height="120" width="120" /><br /><br />
+				100% Vegetarian
+			</div>
+			<div>
+				<img src="made_with_milk.png" height="120" width="120" /><br /><br />
+				Made with cow milk
+			</div>
+			<div>
+				<img src="made_with_rich_ingredients.png" height="120" width="120" /><br />
+				Rich ingredients. <br />Premium quality.
+			</div>
+		</div>
+	</div>
+	<br /><br />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 col-sm-12" style="height: 50vh;">
+				<iframe style="width:100%; height:100%;"
+				src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+				</iframe>
+			</div>
+			<div id="video-section-right" class="col-md-5 col-sm-12" style="display: flex; justify-content: center; 
+			align-items: center; color: #AC3B61; font-family: Kalam;">
+				<h3>THE HOTTEST FLAVOURS<br />AND THE LOWEST PRICES</h3>
+			</div>
+		</div>
+	</div>
+	<br /><br /><br />
 </body>
+<!-- 150217 -->
 <script>
-	$(document).ready(function() {
-		const trending_themes = ['#FFF8DC', '#FFAEAE', '#FFFF99'];
-		$("#next").click(function() {
-			var itemNum = parseInt($('.trending-section').attr('class').split(" ")[1]);
-			$('.trending-section').removeClass(itemNum.toString());
-			if(itemNum < 2)
-				itemNum += 1;
-			else
-				itemNum = 0;
-			$('.trending-section').css('background-color', 
-				trending_themes[itemNum]);
-			$('.trending-section').addClass(itemNum.toString());
-		});
-		$("#prev").click(function() {
-			var itemNum = parseInt($('.trending-section').attr('class').split(" ")[1]);
-			$('.trending-section').removeClass(itemNum.toString());
-			if(itemNum > 0)
-				itemNum -= 1;
-			else
-				itemNum = 2;
-			$('.trending-section').css('background-color', 
-				trending_themes[itemNum]);
-			$('.trending-section').addClass(itemNum.toString());
-		});
-	});
 	const swiper = new Swiper('.swiper', {
 		spaceBetween: 30,
         effect: "fade",
