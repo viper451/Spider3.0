@@ -1,89 +1,131 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Blog Card</title>
-      <link rel="stylesheet" href="blog page.css">
-   </head>
-   <body>
-      <div>  <h1 style="color: black;">BLOGS</h1></div>
-  
-      <div class="blog-card">
-      
-         <input type="radio" name="select" id="tap-1" checked>
-         <input type="radio" name="select" id="tap-2">
-         <input type="radio" name="select" id="tap-3">
-         <input type="radio" name="select" id="tap-4">
-         <input type="checkbox" id="imgTap">
-         <div class="sliders">
-            <label for="tap-1" class="tap tap-1"></label>
-            <label for="tap-2" class="tap tap-2"></label>
-            <label for="tap-3" class="tap tap-3"></label>
-            <label for="tap-4" class="tap tap-4"></label>
-         </div>
-         <div class="inner-part">
-            <label for="imgTap" class="img">
-            <img class="img-1" src="./some_flavours/vanilla.webp">
-            </label>
-            <div class="content content-1">
-             
-               <div class="title" style="color: #ef9a76; font-family: Pattaya;">
-                  Lorem Ipsum Dolor
-               </div>
-               <div class="text" style=" color: #ef9a76; font-family: Pattaya;">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quisquam sit vitae eveniet quibusdam. Impedit pariatur tempora sint incidunt labore dolore rerum ad laborum, molestiae aliquam. Ratione corporis debitis optio.
-               </div>
-               <span style="color: #ef9a76;font-family: Pattaya;">9 November 2022</span>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion One|Pattaya|Kalam&effect=neon|outline|emboss|shadow-multiple">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Blog</title>
+</head>
+<body style="background-color: #EDC7B7;">
+	<nav class="navbar navbar-expand-lg navbar-light w-100 pt-3" 
+		style="z-index: 2; background-color: #AC3B61;">
+		<h1 style="color: #EDC7B7; font-family: Kalam;"><img src="Spider 2.webp" width="60" height="60" />
+			Spider Scoop
+		</h1>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item pr-4 active">
+					<a class="nav-link" href="#" style="color: #EDC7B7; font-family: Kalam;">Menu</a>
+				</li>
+				<li class="nav-item pr-4 active">
+					<a class="nav-link" href="#" style="color: #EDC7B7; font-family: Kalam;">Where we are</a>
+				</li>
+				<li class="nav-item pr-4 active">
+					<a class="nav-link" href="#" style="color: #EDC7B7; font-family: Kalam;">Blog</a>
+				</li>
+			</ul>
+			<form class="form-inline my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search Spider Scoop" aria-label="Search">
+				<button class="btn btn-outline-success my-sm-0 mr-4" type="submit">🔍</button>
+			</form>
+		</div>
+	</nav>
+    <div class="container">
+        <div class="row card-deck mt-5">
+        	<div class="col-md-6 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="some_flavours/choco caramel.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: Kalam; text-align: center; color: #AC3B61;">Charity Title</h4>
+                        <p class="card-text" style="font-family: Kalam;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Posted 2 months ago</small>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="inner-part">
-            <label for="imgTap" class="img">
-            <img class="img-2" src="./some_flavours/strawberry.jpg">
-            </label>
-            <div class="content content-2">
-         
-               <div class="title" style="color: #ef9a76; font-family: Pattaya;">
-                  Lorem Ipsum Dolor
-               </div>
-               <div class="text" style=" color: #ef9a76; font-family: Pattaya;">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea suscipit, placeat adipisci quis autem rerum quisquam eius inventore delectus dignissimos illum praesentium enim quasi consequuntur laborum ipsa dolor a ad.
-               </div>
-               <span style="color: #ef9a76; font-family: Pattaya;">10 November 2022</span>
+            <div class="col-md-6 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="Blog_Images/Image 2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: Kalam; text-align: center; color: #AC3B61;">This Father's Day Surprise Your Foodie Dad With Unique Presents</h4>
+                        <p class="card-text" style="font-family: Kalam;">To satisfy your dad’s cravings and fix his sweet tooth, Baskin Robbin’s Mount Everest can be an apt dessert. It includes scoops of Banana 'N Strawberry ice cream, Belgian Bliss...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Posted Yesterday</small>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="inner-part">
-            <label for="imgTap" class="img">
-            <img class="img-3" src="./some_flavours/choco caramel.jpg">
-            </label>
-            <div class="content content-3">
-            
-               <div class="title" style="color: #ef9a76; font-family: Pattaya;">
-                  Lorem Ipsum Dolor
-               </div>
-               <div class="text" style="color: #ef9a76; font-family: Pattaya;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam in culpa laborum quis dicta iusto quia! Fugiat ratione labore consequuntur commodi, porro magnam, sit, quam neque ipsam corporis deleniti!
-               </div>
-            
-               <span style="color: #ef9a76; font-family: Pattaya;">11 November 2022</span>
+            <div class="col-md-6 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="Blog_Images/Image 3.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: Kalam; text-align: center; color: #AC3B61;">Bits ISTE</h4>
+                        <p class="card-text" style="font-family: Kalam;">ISTE Student's Chapter BIT Sindri is a nationally affiliated techno-management society registered with ISTE New Delhi. With the motto of Technical Development, ISTE Student's Chapter focuses on the personality development and enhancement of Technical Skills of the students to meet the modern competitive era.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Posted Recently</small>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="inner-part">
-            <label for="imgTap" class="img">
-            <img class="img-4" src="./some_flavours/BlueBerry.jpg">
-            </label>
-            <div class="content content-4">
-            
-               <div class="title" style="color: #ef9a76; font-family: Pattaya;">
-                  Lorem Ipsum Dolor
-               </div>
-               <div class="text" style="color: #ef9a76; font-family: Pattaya;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam in culpa laborum quis dicta iusto quia! Fugiat ratione labore consequuntur commodi, porro magnam, sit, quam neque ipsam corporis deleniti!
-               </div>
-            
-               <span style="color: #ef9a76; font-family: Pattaya;">12 November 2022</span>
+            <div class="col-md-6 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="Blog_Images/Image 4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: Kalam; text-align: center; color: #AC3B61;">5 new ice cream flavours to elevate your dessert menu this summer</h4>
+                        <p class="card-text" style="font-family: Kalam;">Digging into that scoop of cold, delicious ice cream is one of the greatest pleasures of life. Any party is incomplete without a soothing array of desserts, mostly ice creams.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Posted 1 week ago</small>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </body>
+            <div class="col-md-6 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="Blog_Images/Image 5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: Kalam; text-align: center; color: #AC3B61;">Celebrating the festive season with good food and love: Here's what to pick for your loved ones</h4>
+                        <p class="card-text" style="font-family: Kalam;">Here is a detailed guide for foodies who are searching for gift options for Diwali, Dhanteras and Bhaidooj.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Posted 3 weeks ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="Blog_Images/Image 6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: Kalam; text-align: center; color: #AC3B61;">Say Hello To The Slush Rush!</h4>
+                        <p class="card-text" style="font-family: Kalam;">Close your eyes and think of those long, summer days. What do you see? Sunny streets, perhaps. Maybe a friendly cricket match or two, which is followed by a run...</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Posted 1 month ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+
+
+
