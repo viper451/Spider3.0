@@ -9,6 +9,7 @@ body{
     font-family: 'Playfair Display', serif;
     display: grid;
     background:linear-gradient(180deg,#AC3B61,#EDC7B7) !important;
+ 
     align-content: center;
     min-height: 100vh;
 }
@@ -29,6 +30,7 @@ z-index:1;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 2%;
 }
 .content h2{
     text-transform: uppercase;
