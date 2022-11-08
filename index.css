@@ -19,26 +19,77 @@ html {
   border-radius: 10%;
 }
 
+/* Video Section */
+
+#video-section-right {
+  display: flex;
+   
+  align-items: center;
+  text-align: center;
+  margin-right: 12%;
+
+}
+
 @media (max-width: 767px) {
   #video-section-right {
-    height: 15vh;
+    display: none;
   }
 }
 
 /* What makes us special */
+
+.what-makes-us-special-image {
+  width: 120px;
+  height: 120px;
+}
+
 @media (max-width: 532px) {
   .what-makes-us-special {
     height: 60vh;
   }
 }
 
+@media (max-width: 450px) {
+  .what-makes-us-special-image {
+    width: 40px;
+    height: 40px;
+  }
+  .what-makes-us-special {
+    font-size: 15px;
+  }
+}
+
+
 /* Browse Flavours */
 
 @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
-body{
-  font-family: 'Muli', sans-serif;
-  background:#ddd;
+
+.flavour-image {
+  height: 120px;
+  width: 120px;
 }
+
+@media (max-width: 600px) {
+  .flavour-image {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .flavour-image {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .flavour-image {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 .shell{
   padding:80px 0;
 }
@@ -50,7 +101,7 @@ body{
   position:relative;
   margin:20px auto;
 }
-.wsk-cp-img{
+.wsk-cp-img {
   position:absolute;
   top:5px;
   left:50%;
@@ -188,16 +239,17 @@ a.buy-btn{
 }
 }
 
-@media screen and (max-width: 461px) {
-  /*.flavour-button {
+/*@media screen and (max-width: 461px) {
+  .flavour-button {
     height: 60px;
     width: 60px;
-  }*/
+  }
   .flavour-button {
     width: 100%;
-  height: auto;
+    height: auto;
   }
 }
+*/
 
 /* Reviews Swiper */
 

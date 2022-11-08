@@ -33,7 +33,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light w-100 pt-3" 
 	style="z-index: 2; background-color: #AC3B61;">
-		<h1 style="color: #EDC7B7; font-family: Kalam;"><img src="./Logo/navlogo.png" width="100" height="90" />
+		<h1 style="color: #EDC7B7; font-family: Kalam;"><img src="Icons/logo.png" width="100" height="90" />
 			$pider $coop
 		</h1>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,58 +98,67 @@
 		<!-- If we need pagination -->
 		<div style="color: black;" class="swiper-pagination"></div>
 	</div>
-	<br /><br />
 	<!-- background-color: #BAB2B5;  -->
 	<div class="what-makes-us-special" style="color: #123C69; height: 30vh; display: flex; 
 	justify-content: center; align-items: center;">
 		<div style="width: 100%; display: flex; justify-content: space-evenly; font-family: Kalam; color: #123C69;">
-			<div>
-				<img src="veg.png" height="120" width="120" /><br /><br />
+			<div style="text-align: center;">
+				<img class="what-makes-us-special-image" src="what_makes_us_special_images/veg.png" /><br /><br />
 				100% Vegetarian
 			</div>
-			<div>
-				<img src="made_with_milk.png" height="120" width="120" /><br /><br />
+			<div style="text-align: center;">
+				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_milk.png" /><br /><br />
 				Made with<br />Cow Milk
 			</div>
-			<div>
-				<img src="made_with_rich_ingredients.png" height="120" width="120" /><br />
+			<div style="text-align: center;">
+				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_rich_ingredients.png" /><br />
 				Rich ingredients. <br />Premium quality.
 			</div>
 		</div>
 	</div>
-	<br /><br />
-	<div class="container">
+	<div class="container video-section">
 		<div class="row">
-			<div class="col-md-7 col-sm-12" style="height: 50vh;">
-				<iframe style="width:100%; height:100%;"
+			<div class="col-md-4 col-sm-12" style="height: 50vh;">
+				<!-- <iframe style="width:100%; height:100%;"
 				src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-				</iframe>
+				</iframe> -->
 			</div>
-			<div id="video-section-right" class="col-md-5 col-sm-12" style="display: flex; justify-content: center; 
-			align-items: center; color: #AC3B61; font-family: Kalam;">
+			<div id="video-section-right"  style="font-family: Kalam; color: #AC3B61;">
 				<h3>THE HOTTEST FLAVOURS<br />AND THE LOWEST PRICES</h3>
 			</div>
 		</div>
 	</div>
-	<br /><br />
 	<div class="container">
-		<!-- <div class="row" style="text-align: center;">
-			<div class="col-4">
-				<button id="chocolate_flavour_button" class="flavour-button" style="background-color: white; border-radius: 50%;">
-					<img class="flavour-image" src="chocolate_icon.png" width="120" height="120"/>
+		<div class="row">
+			<div class="col-3" style="text-align: center">
+				<button id="chocolate_flavour_button" style="background-color: #FFF8DC; border: 0px;">
+					<div style="border-radius: 50%; background-color: #AC3B61;">
+						<img class="flavour-image" src="some_flavours_icons/chocolate_icon.png"/>
+					</div>
 				</button>
 			</div>
-			<div class="col-4">
-				<button id="strawberry_flavour_button" class="flavour-button" style="background-color: white; border-radius: 50%;">
-					<img class="flavour-image" src="strawberry_icon.png" width="120" height="120"/>
+			<div class="col-3" style="text-align: center">
+				<button id="strawberry_flavour_button" class="flavour-button"  style="background-color: #FFF8DC; border: 0px;">
+					<div style="border-radius: 50%; background-color: #AC3B61;">
+						<img class="flavour-image" src="some_flavours_icons/strawberry_icon.png" />
+					</div>
 				</button>
 			</div>
-			<div class="col-4">
-				<button id="vanilla_flavour_button" class="flavour-button" style="background-color: white; border-radius: 50%;">
-					<img class="flavour-image" src="vanilla_icon.png" width="120" height="120"/>
+			<div class="col-3" style="text-align: center">
+				<button id="vanilla_flavour_button" class="flavour-button"  style="background-color: #FFF8DC; border: 0px;">
+					<div style="border-radius: 50%; background-color: #AC3B61;">
+						<img class="flavour-image" src="some_flavours_icons/vanilla_icon.png"/>
+					</div>
 				</button>
 			</div>
-		</div> -->
+			<div class="col-3" style="text-align: center">
+				<button id="coffee_flavour_button" class="flavour-button"  style="background-color: #FFF8DC; border: 0px;">
+					<div style="border-radius: 50%; background-color: #AC3B61;">
+						<img class="flavour-image" src="some_flavours_icons/coffee_icon.png"/>
+					</div>
+				</button>
+			</div>
+		</div>
 		<div class="container text-center">
 			<div class="shell">
 			  <div class="container">
@@ -157,40 +166,15 @@
 			      <div class="col-md-4">
 			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
 			          <div class="wsk-cp-img">
-			            <img class="flavour_sample_image" src="some_flavours/choco caramel.jpg" alt="Product" class="img-responsive" />
+			            <img id="some_flavours_items_image_1" src="some_flavours_items/chocolate/1.jpg" alt="Product" class="img-responsive"
+			            />
 			          </div>
 			          <div class="wsk-cp-text">
 			            <div class="title-product">
-			              <h3>My face not my heart</h3>
+			              <h3 id="some_flavours_items_title_1">Double Chocolate</h3>
 			            </div>
 			            <div class="card-footer">
-			              <div class="wcf-right"><span class="price">₹500.000</span></div>
-			            </div>
-			          </div>
-			        </div>
-			      </div>
-			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
-			          <div class="wsk-cp-img"><img class="flavour_sample_image" src="some_flavours/choco caramel.jpg" alt="Product" class="img-responsive" /></div>
-			          <div class="wsk-cp-text">
-			            <div class="title-product">
-			              <h3>My face not my heart</h3>
-			            </div>
-			            <div class="card-footer">
-			              <div class="wcf-right"><span class="price">₹500.000</span></div>
-			            </div>
-			          </div>
-			        </div>
-			      </div>
-			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
-			          <div class="wsk-cp-img"><img class="flavour_sample_image" src="some_flavours/choco caramel.jpg" alt="Product" class="img-responsive" /></div>
-			          <div class="wsk-cp-text">
-			            <div class="title-product">
-			              <h3>My face not my heart</h3>
-			            </div>
-			            <div class="card-footer">
-			              <div class="wcf-right"><span class="price">₹500.000</span></div>
+			              <div class="wcf-right"><span class="price">₹1000.000</span></div>
 			            </div>
 			          </div>
 			        </div>
@@ -198,40 +182,75 @@
 			      <div class="col-md-4">
 			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
 			          <div class="wsk-cp-img">
-			            <img class="flavour_sample_image" src="some_flavours/choco caramel.jpg" alt="Product" class="img-responsive" />
+		          	<img  id="some_flavours_items_image_2" src="some_flavours_items/chocolate/2.jpg" alt="Product" class="img-responsive"/>
 			          </div>
 			          <div class="wsk-cp-text">
 			            <div class="title-product">
-			              <h3>My face not my heart</h3>
+			              <h3 id="some_flavours_items_title_2">Death By Chocolate</h3>
 			            </div>
 			            <div class="card-footer">
-			              <div class="wcf-right"><span class="price">₹500.000</span></div>
-			            </div>
-			          </div>
-			        </div>
-			      </div>
-			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
-			          <div class="wsk-cp-img"><img class="flavour_sample_image" src="some_flavours/choco caramel.jpg" alt="Product" class="img-responsive" /></div>
-			          <div class="wsk-cp-text">
-			            <div class="title-product">
-			              <h3>My face not my heart</h3>
-			            </div>
-			            <div class="card-footer">
-			              <div class="wcf-right"><span class="price">₹500.000</span></div>
+			              <div class="wcf-right"><span class="price">₹750.000</span></div>
 			            </div>
 			          </div>
 			        </div>
 			      </div>
 			      <div class="col-md-4">
 			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
-			          <div class="wsk-cp-img"><img class="flavour_sample_image" src="some_flavours/choco caramel.jpg" alt="Product" class="img-responsive" /></div>
+			          <div class="wsk-cp-img">
+			          	<img  id="some_flavours_items_image_3" src="some_flavours_items/chocolate/3.jpg" alt="Product" class="img-responsive" />
+			          </div>
 			          <div class="wsk-cp-text">
 			            <div class="title-product">
-			              <h3>My face not my heart</h3>
+			              <h3 id="some_flavours_items_title_3">Chocolate Gateau Ice Cream</h3>
 			            </div>
 			            <div class="card-footer">
-			              <div class="wcf-right"><span class="price">₹500.000</span></div>
+			              <div class="wcf-right"><span class="price">₹1000.000</span></div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col-md-4">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			          <div class="wsk-cp-img">
+			            <img  id="some_flavours_items_image_4" src="some_flavours_items/chocolate/4.jpg" alt="Product" class="img-responsive" 
+/>
+			          </div>
+			          <div class="wsk-cp-text">
+			            <div class="title-product">
+			              <h3 id="some_flavours_items_title_4">Magnum Chocolate Truffle</h3>
+			            </div>
+			            <div class="card-footer">
+			              <div class="wcf-right"><span class="price">₹800.000</span></div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col-md-4">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			          <div class="wsk-cp-img">
+			          	<img  id="some_flavours_items_image_5" src="some_flavours_items/chocolate/5.jpg" alt="Product" class="img-responsive" />
+			          </div>
+			          <div class="wsk-cp-text">
+			            <div class="title-product">
+			              <h3 id="some_flavours_items_title_5">Belgian Chocolate</h3>
+			            </div>
+			            <div class="card-footer">
+			              <div class="wcf-right"><span class="price">₹1250.000</span></div>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			      <div class="col-md-4">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			          <div class="wsk-cp-img">
+			          	<img  id="some_flavours_items_image_6" src="some_flavours_items/chocolate/6.jpg" alt="Product" class="img-responsive" />
+			          </div>
+			          <div class="wsk-cp-text">
+			            <div class="title-product">
+			              <h3 id="some_flavours_items_title_6">Chocolate Semi Freddo</h3>
+			            </div>
+			            <div class="card-footer">
+			              <div class="wcf-right"><span class="price">₹1500.000</span></div>
 			            </div>
 			          </div>
 			        </div>
@@ -240,7 +259,6 @@
 			</div>
 		</div>
 	</div>
-	</div>
 	<div class="container" style="background-color: #AC3B61;  font-family: Passion One; color: #EDC7B7">
 		<div style="text-align: center;">
 			<h1>
@@ -248,7 +266,7 @@
 				“
 			</h1>
 		</div>
-		<div class="swiper swiper-2" style="height: 40vh; padding-bottom: 10vh;">
+		<div class="swiper swiper-2" >
 			<div class="swiper-wrapper">
 				<div class="swiper-slide swiper-2-slide" style="background-color: #AC3B61; color: #EDC7B7; font-family: Pattaya;">
 					<div>
@@ -299,9 +317,8 @@
 			<div style="color: white;" class="swiper-pagination"></div>
 		</div>
 	</div>
-	<br /><br />
 	<!-- background-color: #BAB2B5; c -->
-	<div class="subscribe-section" style="color: #123C69; height: 30vh; display: flex; 
+	<div class="subscribe-section" style="color: #AC3B61; font-family: Pattaya; height: 60vh; display: flex; 
 	justify-content: center; align-items: center;">
 		<div>
 			<h2>Get notified of our blogs and get access to exclusive deals & treats :)</h2>
@@ -317,7 +334,7 @@
 	<div style="display: flex; justify-content: center; align-items: center;">
 		<img src="Logo/navlogo.png" style="height: 30vh; width: 60vh;"/>
 	</div> -->
-	<br /><br />
+	</div>
 	<footer style="background-color: #AC3B61;">
         <div class="container">
             <div class="row">
@@ -334,18 +351,18 @@
                     <div class="single-box">
                         <h3 style="color: #EDC7B7;">Contact Us</h3>
                         <div class="card-area">                
-                            <i class="fa fa-phone" aria-hidden="true" style="color: #EDC7B7;"> &nbsp; +91-012-245-6789</i>
+                            <i class="fa fa-phone" aria-hidden="true" style="color: #EDC7B7;"> &nbsp; +91-908-246-6221</i>
                             </div>
                             <br>
                             <div class="card-area">
-                                <i class="fa fa-fax" aria-hidden="true" style="color: #EDC7B7;"> &nbsp;+91-012-245-6789</i>
+                                <i class="fa fa-fax" aria-hidden="true" style="color: #EDC7B7;"> &nbsp;+91-908-437-8966</i>
                     </div>
                     </div>
 
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-box">
-                        <h2 style="color: #EDC7B7;">Title 1</h2>
+                        <h2 style="color: #EDC7B7;">Shop</h2>
                     <ul>
                         <li><a><b style="color: #EDC7B7;">Home</b></a></li>
                         <li><a><b style="color: #EDC7B7;">Menu</b></a></li>
@@ -359,7 +376,7 @@
                 
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-box">
-                        <h2 style="color: #EDC7B7;">Title 2</h2>
+                        <h2 style="color: #EDC7B7;">Resource</h2>
                     <ul>
                         <li><a><b style="color: #EDC7B7;">Join our Team</b></a></li>
                         <li><a><b style="color: #EDC7B7;">Sponsorships & Donations</b></a></li>
@@ -396,7 +413,6 @@
         </div>
     </footer>
 </body>
-<!-- 150217 -->
 <script>
 	const swiper = new Swiper('.swiper', {
 		spaceBetween: 30,
@@ -417,25 +433,76 @@
 	});
 	$(document).ready(function() {
 		$("#chocolate_flavour_button").click(function() {
-			$(".flavour_sample_image").attr("src","some_flavours/choco caramel.jpg");
+			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/chocolate/1.jpg");
+			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/chocolate/2.jpg");
+			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/chocolate/3.jpg");
+			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/chocolate/4.jpg");
+			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/chocolate/5.jpg");
+			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/chocolate/6.jpg");
+			$("#some_flavours_items_title_1").text('Double Chocolate');
+			$("#some_flavours_items_title_2").text('Death By Chocolate');
+			$("#some_flavours_items_title_3").text('Chocolate Gateau Ice Cream');
+			$("#some_flavours_items_title_4").text('Magnum Chocolate Truffle');
+			$("#some_flavours_items_title_5").text('Belgium Chocolate');
+			$("#some_flavours_items_title_6").text('Chocolate Semi Freddo');
 			$('.wsk-cp-product').css('background-color', 
 				'#F4A460');
 			$('.wsk-cp-product').css('color', 
 				'#8B4513');
 		});
 		$("#strawberry_flavour_button").click(function() {
-			$(".flavour_sample_image").attr("src","some_flavours/strawberry.jpg");
+			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/strawberry/1.jpg");
+			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/strawberry/2.jpg");
+			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/strawberry/3.jpg");
+			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/strawberry/4.jpg");
+			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/strawberry/5.jpg");
+			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/strawberry/6.jpg");
+			$("#some_flavours_items_title_1").text('Strawberry Arctic Roll');
+			$("#some_flavours_items_title_2").text('Pink Dame blanche');
+			$("#some_flavours_items_title_3").text('Parfait');
+			$("#some_flavours_items_title_4").text('Strawberry Poire belle Hélène');
+			$("#some_flavours_items_title_5").text('Cream Bombe glacée');
+			$("#some_flavours_items_title_6").text('Berry Tin roof pie');
 			$('.wsk-cp-product').css('background-color', 
-				'#FFC0CB');
-			$('.wsk-cp-product').css('color', 
 				'#FF69B4');
+			$('.wsk-cp-product').css('color', 
+				'#FFC0CB');
 		});
 		$("#vanilla_flavour_button").click(function() {
-			$(".flavour_sample_image").attr("src","some_flavours/vanilla.webp");
+			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/vanilla/1.jpg");
+			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/vanilla/2.jpeg");
+			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/vanilla/3.jpg");
+			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/vanilla/4.jpg");
+			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/vanilla/5.jpg");
+			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/vanilla/6.jpg");
+			$("#some_flavours_items_title_1").text('Mocha Mud Pie');
+			$("#some_flavours_items_title_2").text('Caramel Creme');
+			$("#some_flavours_items_title_3").text('Vanilla Berry');
+			$("#some_flavours_items_title_4").text('Vanilla Flitz');
+			$("#some_flavours_items_title_5").text('Vanilla Fudge Swirl');
+			$("#some_flavours_items_title_6").text('Rum Raisin');
 			$('.wsk-cp-product').css('background-color', 
-				'#FFFDD0');
-			$('.wsk-cp-product').css('color', 
 				'#cd853f');
+			$('.wsk-cp-product').css('color', 
+				'#FFFDD0');
+		});
+		$("#coffee_flavour_button").click(function() {
+			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/coffee/1.jpg");
+			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/coffee/2.jpg");
+			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/coffee/3.jpg");
+			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/coffee/4.jpg");
+			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/coffee/5.jpg");
+			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/coffee/6.jpg");
+			$("#some_flavours_items_title_1").text('Coffee n Cookies');
+			$("#some_flavours_items_title_2").text('Coffee Cone');
+			$("#some_flavours_items_title_3").text('Coffee Chips');
+			$("#some_flavours_items_title_4").text('Coffee and Creme');
+			$("#some_flavours_items_title_5").text('Coffee Dough');
+			$("#some_flavours_items_title_6").text('Cocoa Cobbler');
+			$('.wsk-cp-product').css('background-color', 
+				'#8B4513');
+			$('.wsk-cp-product').css('color', 
+				'#FFFDD0');
 		});
 	});
 	// const swiper = new Swiper('.swiper', {
