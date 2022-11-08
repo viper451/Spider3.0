@@ -1,54 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-body{
-    font-family: 'Playfair Display', serif;
-    display: grid;
-    background:linear-gradient(180deg,#AC3B61,#EDC7B7) !important;
- 
-    align-content: center;
-    min-height: 100vh;
-}
-section{
+section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 90vh;
     width: 85vw;
     margin: 0 auto;
 }
 
-
-.checkpoint1{
+.checkpoint1 {
     font-size:  26px;
     font-style: italic;
 }
 
-.checkpoint2{
+.checkpoint2 {
     font-size:  25px;
     font-style: italic;
 }
 
-.checkpoint3{
+.checkpoint3 {
     font-size:  23px;
     font-style: italic;
 }
 
-
-
-.content{ 
-    background:linear-gradient(180deg,#ea5486,#edb8a1) !important;
+.content { 
     display: flex;
-z-index:1;
+    z-index:1;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 2%;
 }
-.content h2{
+
+.content h2 {
     text-transform: uppercase;
     font-size: 36px;
     letter-spacing: 6px;
@@ -56,13 +39,14 @@ z-index:1;
     padding-bottom: 5% ;
     color: black;
 }
-.content span{
+
+.content span {
     height: 0.5px;
     width: 80px;
-    background: #777;
     margin: 30px 0;
 }
-.content p{
+
+.content p {
     padding-bottom: 15px;
     font-weight: 300;
     opacity: 0.7;
@@ -71,10 +55,11 @@ z-index:1;
     margin: 0 auto;
     line-height: 1.7;
 }
-.links{
+
+.links {
     margin: 15px 0;
 }
-.links li{
+.links li {
     border: 0.5px solid #777;
     list-style: none;
     border-radius: 5px;
@@ -82,25 +67,26 @@ z-index:1;
     width: 160px;
     text-align: center;
 }
-.links li a{
+
+.links li a {
     text-transform: uppercase;
     color: #777;
     text-decoration: none;
 }
-.links li:hover{
+
+.links li:hover {
     border-color: #06d6a0;
 }
-.links li:hover a{
+
+.links li:hover a {
     color :#06d6a0;
 }
-.vertical-line{
+
+.vertical-line {
     height: 30px;
     width: 0.5px;
-    background: #777;
     margin: 0 auto;
 }
-
-
 
 /*****************/
 
@@ -185,10 +171,6 @@ z-index:1;
     font-style: italic;
    }
 }
-
-
-
-
 
 /* 
 IMAGE ANIMATION */
