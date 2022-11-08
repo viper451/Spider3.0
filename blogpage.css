@@ -1,0 +1,16 @@
+.card 
+{
+    display: flex;
+    flex-direction:row;
+    border: 1px solid #AC3B61;
+    
+}
+
+.card:hover
+{ 
+    transition-duration: 1s;
+  transform: scale(1.1);
+  position:initial;
+  z-index:1;
+  background:#fff;
+}

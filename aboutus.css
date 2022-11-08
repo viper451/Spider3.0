@@ -9,6 +9,7 @@ body{
     font-family: 'Playfair Display', serif;
     display: grid;
     background:linear-gradient(180deg,#AC3B61,#EDC7B7) !important;
+ 
     align-content: center;
     min-height: 100vh;
 }
@@ -21,6 +22,22 @@ section{
 }
 
 
+.checkpoint1{
+    font-size:  26px;
+    font-style: italic;
+}
+
+.checkpoint2{
+    font-size:  25px;
+    font-style: italic;
+}
+
+.checkpoint3{
+    font-size:  23px;
+    font-style: italic;
+}
+
+
 
 .content{ 
     background:linear-gradient(180deg,#ea5486,#edb8a1) !important;
@@ -29,6 +46,7 @@ z-index:1;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 2%;
 }
 .content h2{
     text-transform: uppercase;
@@ -81,61 +99,95 @@ z-index:1;
     background: #777;
     margin: 0 auto;
 }
-.icons{
-    color: rgb(16, 15, 15);
-    display: flex;
-    padding: 15px 0;
-}
-.icons li{
-    display: block;
-    padding: 5px;
-    margin: 5px;
-}
-.icons li i{
-    font-size: 26px;
-    opacity: 0.8;
-}
-.icons li i:hover{
-    color: #06d6a0;
-}
+
 
 
 /*****************/
 
-@media(max-width: 992px){
+/* @media(max-width: 992px){
     section{
         grid-template-columns: 1fr;
         width: 100%;
     }
-    .image{
-        height: 100vh;
-    }
-    .content{
-        height: 100vh;
-    }
-    .content h2{
-        font-size: 20px;
-        margin-top: 50px;
-    }
-    .content span{
-        margin: 20px 0;
-    }
-    .content p{
-        font-size: 14px;
-    }
-    .links li a{
-        font-size: 14px;
-    }
-    .links{
-        margin: 5px 0;
-    }
-    .links li{
-        padding: 6px 10px;
-    }
-    .icons li i{
-        font-size: 15px;
-    }
+   
+} */
+
+@media(max-width: 863px){
+    .checkpoint1{
+    font-size: 23px;
+    font-style: italic;
+   }
+   .checkpoint2{
+    font-size: 23px;
+    font-style: italic;
+   }
+   .checkpoint3{
+    font-size: 23px;
+    font-style: italic;
+   }
+
 }
+
+ /* FOR FIRST CONTENT  */
+@media(max-width: 681px){
+    .checkpoint1{
+    font-size: 18px;
+    font-style: italic;
+  } 
+}
+@media(max-width: 460px){
+    .checkpoint1{
+    font-size: 15px;
+    font-style: italic;
+   }
+}
+
+
+/* FOR SECOND CONTENT */
+
+@media(max-width: 779px){
+    .checkpoint2{
+    font-size: 19px;
+    font-style: italic;
+  } 
+}
+@media(max-width: 528px){
+    .checkpoint2{
+    font-size: 16px;
+    font-style: italic;
+   }
+}
+@media(max-width: 335px){
+    .checkpoint2{
+    font-size: 12px;
+    font-style: italic;
+   }
+}
+
+
+/* FOR THIRD CONTENT */
+
+@media(max-width: 984px){
+    .checkpoint3{
+    font-size: 19px;
+    font-style: italic;
+  } 
+}
+@media(max-width: 659px){
+    .checkpoint3{
+    font-size: 16px;
+    font-style: italic;
+   }
+}
+@media(max-width: 442px){
+    .checkpoint3{
+    font-size: 13px;
+    font-style: italic;
+   }
+}
+
+
+
 
 
 /* 
