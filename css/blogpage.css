@@ -1,0 +1,7 @@
+.blog-card:hover {
+    transition-duration: 1s;
+    transform: scale(1.1);
+    position:initial;
+    z-index:1;
+    background:#fff;
+}

@@ -13,7 +13,7 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.box-container {
   position: relative;
   width: 100%;
   min-height: 100vh;

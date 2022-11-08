@@ -5,7 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contactus.css" />
+    <link rel="stylesheet" href="css/contactus.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion One|Pattaya|Kalam&effect=neon|outline|emboss|shadow-multiple">
+
+    <!-- Fonts -->
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
@@ -14,8 +25,40 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
-    <div class="container" style="background-color: #e7437a; color: #EDC7B7;">
-      
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light w-100 pt-3" 
+    style="z-index: 2; background-color: #AC3B61;">
+      <h1 style="color: #EDC7B7; font-family: Kalam;"><img src="Icons/logo.png" width="100" height="90" />
+      </h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item pr-4 active">
+            <a class="nav-link" style="color: #EDC7B7; font-family: Kalam;" 
+            href="index.html#trending-section" target="_blank">Trending</a>
+          </li>
+          <li class="nav-item pr-4 active">
+            <a class="nav-link" style="color: #EDC7B7; font-family: Kalam;"
+            href="index.html#popular-section" target="_blank">Popular</a>
+          </li>
+          <li class="nav-item pr-4 active">
+            <a class="nav-link" style="color: #EDC7B7; font-family: Kalam;"
+            href="index.html#reviews-section" target="_blank">Reviews</a>
+          </li>
+          <li class="nav-item pr-4 active">
+            <a class="nav-link" style="color: #EDC7B7; font-family: Kalam;" 
+            href="index.html#subscribe-section" target="_blank">Subscribe</a>
+          </li>
+        </ul>
+        <form class="form-inline my-lg-0">
+          <input class="form-control" type="search" placeholder="Search Spider Scoop" aria-label="Search">
+          <button class="btn btn-outline-success my-sm-0" type="submit" style="background-color: #EDC7B7;">🔍</button>
+        </form>
+      </div>
+    </nav>
+    <div class="box-container" style="background-color: #e7437a; color: #EDC7B7;">
       <div class="form">
         <div class="contact-info"  style="background-color: #e7437a;" >
           <h3 class="title" style="color: #e4a98f; ">Let's connect</h3>
@@ -92,6 +135,78 @@
       </div>
     </div>
 
+    <footer style="background-color: #AC3B61;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box" style="color: #123C69;">
+                      <p style="color: #EDC7B7;">We aim at providing the best quality if ice cream in the most hygiene way and offered at an attractive price point.</p>
+                    </div>
+                    <br>
+                    <div class="single-box">
+                        <h3 style="color: #EDC7B7;">Contact Us</h3>
+                        <div class="card-area">                
+                            <i class="fa fa-phone" aria-hidden="true" style="color: #EDC7B7;"> &nbsp; +91-908-246-6221</i>
+                            </div>
+                            <br>
+                            <div class="card-area">
+                                <i class="fa fa-fax" aria-hidden="true" style="color: #EDC7B7;"> &nbsp;+91-908-437-8966</i>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2 style="color: #EDC7B7;">Shop</h2>
+                    <ul>
+                        <li><a><b style="color: #EDC7B7;">Home</b></a></li>
+                        <li><a><b style="color: #EDC7B7;">Menu</b></a></li>
+                        <li><a><b style="color: #EDC7B7;">Where we are</b></a></li>
+                        <li><a><b style="color: #EDC7B7;">Blog</b></a></li>
+                        <li><a><b style="color: #EDC7B7;">About us</b></a></li>
+                      
+                    </ul>
+                    </div>                    
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2 style="color: #EDC7B7;">Resource</h2>
+                    <ul>
+                        <li><a><b style="color: #EDC7B7;">Join our Team</b></a></li>
+                        <li><a><b style="color: #EDC7B7;">Sponsorships & Donations</b></a></li>
+                        <li><a><b style="color: #EDC7B7;">Submit a flavour</b></a></li>
+                        <li><a><b style="color: #EDC7B7;">Let's connect</b></a></li>
+                       
+                    </ul>
+                    </div>                    
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2 style="color: #EDC7B7;">Locate Us</h2>
+                        <p style="color: #EDC7B7;"><i class="fa fa-map-marker" aria-hidden="true"></i> Head Office: B1 - 901,
+              Marathon Next Gen Complex,
+              Lower Parel (W),
+              Mumbai - 400013<br>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Warehouse: Delport Enterprises Pvt. Ltd.,
+                            Arham  Estate,
+                            Mira Road, Naya Nagar,
+                            Mumbai- 401107
+            </p>
+                        
+                        <h2 style="color: #EDC7B7;">Follow us on</h2>
+                        <p class="socials">
+                            <i class="fa fa-facebook"  aria-hidden="true" style="color: #EDC7B7;"></i>
+                            <i class="fa fa-linkedin" aria-hidden="true" style="color: #EDC7B7;"></i>
+                            <i class="fa fa-dribbble"  aria-hidden="true" style="color: #EDC7B7;"></i>
+                            <i class="fa fa-pinterest"  aria-hidden="true" style="color: #EDC7B7;"></i>
+                            <i class="fa fa-twitter"  aria-hidden="true" style="color: #EDC7B7;"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
