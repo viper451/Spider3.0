@@ -3,6 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Trending Carousel */
+
 .swiper-pagination-bullet-active {
   background-color: #123C69 !important;
 }
@@ -27,6 +29,22 @@ html {
   align-items: center;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+[data-inviewport="appear-left"] {
+}
+
+[data-inviewport="appear-left"].is-inViewport { 
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
 @media (max-width: 767px) {
   #video-section-right {
     display: none;
@@ -38,6 +56,15 @@ html {
 .what-makes-us-special-image {
   width: 120px;
   height: 120px;
+}
+
+[data-inviewport="scale-in"] {
+  transition: 1.5s;
+  transform: scale(0.1);
+}
+
+[data-inviewport="scale-in"].is-inViewport {
+  transform: scale(1);
 }
 
 @media (max-width: 532px) {
@@ -56,9 +83,16 @@ html {
   }
 }
 
-
 /* Browse Flavours */
 
+[data-inviewport="scale-in-fast"] {
+  transition: 0.75s;
+  transform: scale(0.1);
+}
+
+[data-inviewport="scale-in-fast"].is-inViewport {
+  transform: scale(1);
+}
 
 .flavour-image {
   height: 120px;
@@ -86,9 +120,6 @@ html {
   }
 }
 
-.shell{
-  padding:80px 0;
-}
 .wsk-cp-product{
   background:#fff;
   padding:15px;
@@ -97,6 +128,7 @@ html {
   position:relative;
   margin:20px auto;
 }
+
 .wsk-cp-img {
   position:absolute;
   top:5px;
@@ -140,7 +172,7 @@ html {
 .wsk-cp-text .description-prod p{
   margin:0;
 }
-/* Truncate */
+
 .wsk-cp-text .description-prod {
   text-align:center;
   width: 100%;
@@ -268,12 +300,13 @@ a.buy-btn{
 
 /* Flavour Icons */
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
   /* Webkit */
-   width: 0;
-   height: 0;
+  width: 0;
+  height: 0;
 }
- .hs {
+
+.hs {
    display: flex;
    overflow-x: scroll;
    justify-content: space-between;
@@ -321,7 +354,6 @@ a.buy-btn{
    flex-grow: 1;
    flex-shrink: 0;
    flex-basis: calc(100% / 4 - (10px * 2) - (20px / 4));
-   margin: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -397,10 +429,16 @@ a.buy-btn{
    padding: calc(10px * 4);
 }
  
+.nav-item:hover {
+    background-color: white;
+}
 
-
-
-
+#pageEndLogo:hover {
+  transition-duration: 1s;
+  transform: scale(1.2);
+  position:initial;
+  z-index:1;
+}
 
 
 

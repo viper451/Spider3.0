@@ -384,4 +384,13 @@ textarea.input {
     100% { color: red; }
 }
 
+#pageEndLogo:hover {
+  transition-duration: 1s;
+  transform: scale(1.2);
+  position:initial;
+  z-index:1;
+}
 
+.nav-item:hover {
+    background-color: white;
+}

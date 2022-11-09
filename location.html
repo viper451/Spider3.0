@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Location</title>
-	<link rel="stylesheet" type="text/css" href="css/aboutus.css">
+	<title>Spider Scoop - Location</title>
+	<link rel="stylesheet" type="text/css" href="css/location.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css" />
 
 	<!-- Bootstrap -->
@@ -100,7 +100,7 @@
 			</div>
 			<br />
 			<div class="row">
-				<div class="col-md-5 col-sm-12" style="color: #EDC7B7; background-color: #AC3B61;">
+				<div class="col-md-5 col-sm-12" style="color: #EDC7B7; background-color: #AC3B61;" data-inviewport="appear-left">
 					<div style="height: 33%;">
 						<div class="row">
 							<div class="col-2 pt-5" style="">
@@ -145,7 +145,7 @@
 					</div>
 				</div>
 				<br /><br />
-				<div class="col-md-7 col-sm-12">
+				<div class="col-md-7 col-sm-12" data-inviewport="appear-right">
 					<div id="map" style="height: 90vh;"></div>
 				</div>
 			</div>
@@ -268,7 +268,7 @@
 	  </section>
 	  </div>
 			<div style="display: flex; justify-content: center; align-items: center; height: 30vh;">
-				<img src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
+				<img id="pageEndLogo" src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
 			</div>
 		</div>
 	 <footer style="background-color: #AC3B61;">
@@ -342,73 +342,8 @@
             </div>
         </div>
     </footer>
-    <script>
-			mapboxgl.accessToken = 'pk.eyJ1IjoiZXBoaXJhbS1yZW5haXMiLCJhIjoiY2t5ajZ1aTVoMWk4ZTJvcG1nNzRjaWY0MiJ9.ipIanO9ZaafvcgugtuZAFg';
-			const geojson = {
-				type: 'FeatureCollection',
-				features: [
-					{
-						type: 'Feature',
-						geometry: {
-							type: 'Point',
-							coordinates: [72.872067124358, 19.291322024164458]
-						},
-						properties: {
-							title: 'Beverly Park Road',
-							description: 'Mira Road'
-						}
-					},
-					{
-						type: 'Feature',
-						geometry: {
-							type: 'Point',
-							coordinates: [72.8611189126874, 19.29926094696998]
-						},
-						properties: {
-							title: 'Golden Nest',
-							description: 'Bhayandar'
-						}
-					},
-					{
-						type: 'Feature',
-						geometry: {
-							type: 'Point',
-							coordinates: [72.85593023013136, 19.29178783894362]
-						},
-						properties: {
-							title: 'Jugura Hospital',
-							description: 'Kashimira'
-						}
-					},
-				]
-			};
-
-			const map = new mapboxgl.Map({
-				container: 'map', // container ID
-				// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-				style: 'mapbox://styles/mapbox/streets-v11', // style URL
-				center: [72.8625784459673, 19.293857691914653], // starting center in [lng, lat]
-				zoom: 14, // starting zoom
-			});
-
-			// add markers to map
-			for (const feature of geojson.features) {
-				// create a HTML element for each feature
-				const el = document.createElement('div');
-				el.className = 'marker';
-				 
-				// make a marker for each feature and add it to the map
-				new mapboxgl.Marker(el)
-				.setLngLat(feature.geometry.coordinates)
-				.setPopup(
-				new mapboxgl.Popup({ offset: 25 }) // add popups
-				.setHTML(
-				`<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-				)
-				)
-				.addTo(map);
-			}
-			</script>
+    <script src="js/location.js">
+	</script>
 	</body>
 </html>
 
