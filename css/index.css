@@ -11,6 +11,8 @@ html {
 }
 
 
+/* Trending Carousel */
+
 .swiper-pagination-bullet-active {
   background-color: #123C69 !important;
 }
@@ -35,6 +37,22 @@ html {
   align-items: center;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+[data-inviewport="appear-left"] {
+}
+
+[data-inviewport="appear-left"].is-inViewport { 
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
 @media (max-width: 767px) {
   #video-section-right {
     display: none;
@@ -46,6 +64,15 @@ html {
 .what-makes-us-special-image {
   width: 120px;
   height: 120px;
+}
+
+[data-inviewport="scale-in"] {
+  transition: 1.5s;
+  transform: scale(0.1);
+}
+
+[data-inviewport="scale-in"].is-inViewport {
+  transform: scale(1);
 }
 
 @media (max-width: 532px) {
@@ -64,9 +91,16 @@ html {
   }
 }
 
-
 /* Browse Flavours */
 
+[data-inviewport="scale-in-fast"] {
+  transition: 0.75s;
+  transform: scale(0.1);
+}
+
+[data-inviewport="scale-in-fast"].is-inViewport {
+  transform: scale(1);
+}
 
 .flavour-image {
   height: 120px;
@@ -94,9 +128,6 @@ html {
   }
 }
 
-.shell{
-  padding:80px 0;
-}
 .wsk-cp-product{
   background:#fff;
   padding:15px;
@@ -105,6 +136,7 @@ html {
   position:relative;
   margin:20px auto;
 }
+
 .wsk-cp-img {
   position:absolute;
   top:5px;
@@ -148,7 +180,7 @@ html {
 .wsk-cp-text .description-prod p{
   margin:0;
 }
-/* Truncate */
+
 .wsk-cp-text .description-prod {
   text-align:center;
   width: 100%;
@@ -276,12 +308,13 @@ a.buy-btn{
 
 /* Flavour Icons */
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
   /* Webkit */
-   width: 0;
-   height: 0;
+  width: 0;
+  height: 0;
 }
- .hs {
+
+.hs {
    display: flex;
    overflow-x: scroll;
    justify-content: space-between;
@@ -331,7 +364,6 @@ a.buy-btn{
    flex-grow: 1;
    flex-shrink: 0;
    flex-basis: calc(100% / 4 - (10px * 2) - (20px / 4));
-   margin: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -364,11 +396,11 @@ a.buy-btn{
 
  .hs__item__image__wrapper {
    position: relative;
-   width: 90%;
+   width: 80%;
    height: 0;
    padding-bottom: 100%;
    background-color: #45322E;
-   border-radius: 50%;
+   border-radius: 40%;
    display: inline-block;
 
 }
@@ -434,21 +466,21 @@ transform: scale(1.1);
 STRAWBERRY */
 .hs__item__image__wrapper2 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #fc5a8d;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
  .hs__item__image2 {
    pointer-events: none;
    position: absolute;
-   margin-left: 18%;
-   margin-top: 18%;
-   width: 60%;
-   height: 60%;
+   margin-left: 24%;
+   margin-top: 24%;
+   width: 50%;
+   height: 50%;
    object-fit: cover;
    align-items: center;
    
@@ -460,11 +492,11 @@ STRAWBERRY */
 /* VANILLA */
 .hs__item__image__wrapper3 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #F3E5AB;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -486,11 +518,11 @@ STRAWBERRY */
 /* COFFE */
 .hs__item__image__wrapper4 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #6F4E37;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -512,11 +544,11 @@ STRAWBERRY */
 /* APPLE  */
 .hs__item__image__wrapper5 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #FF0800;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -538,11 +570,11 @@ STRAWBERRY */
 /* ESPRESSO */
 .hs__item__image__wrapper6 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color:  #3C2218;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -565,11 +597,11 @@ STRAWBERRY */
 MINT */
 .hs__item__image__wrapper7 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #3EB489;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -591,11 +623,11 @@ MINT */
 /* LITCHI */
 .hs__item__image__wrapper8 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #Dc5349;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -618,11 +650,11 @@ MINT */
 /* COCONUT */
 .hs__item__image__wrapper9 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #965a3e;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -645,11 +677,11 @@ MINT */
 /* GREEN APPLE */
 .hs__item__image__wrapper10 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color:#8db600;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
 
 }
@@ -672,11 +704,11 @@ MINT */
 
 .hs__item__image__wrapper11 {
   position: relative;
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-bottom: 100%;
   background-color: #ae9f80;
-  border-radius: 50%;
+  border-radius: 40%;
    display: inline-block;
 }
 .hs__item__image__wrapper11:hover {
@@ -692,6 +724,16 @@ MINT */
    height: 60%;
    object-fit: cover;
    align-items: center;
+ }
+.nav-item:hover {
+    background-color: white;
+}
+
+#pageEndLogo:hover {
+  transition-duration: 1s;
+  transform: scale(1.2);
+  position:initial;
+  z-index:1;
 }
 
 

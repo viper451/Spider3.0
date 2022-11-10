@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ice cream</title>
+	<title>Spider Scoop</title>
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -105,23 +105,24 @@
 	justify-content: center; align-items: center;">
 		<div style="width: 100%; display: flex; justify-content: space-evenly; font-family: Passion One; color: #123C69;">
 			<div style="text-align: center;">
-				<img class="what-makes-us-special-image" src="what_makes_us_special_images/veg.png" /><br /><br />
+				<img class="what-makes-us-special-image" src="what_makes_us_special_images/veg.png" data-inviewport="scale-in" />
+				<br /><br />
 				100% Vegetarian
 			</div>
 			<div style="text-align: center;">
-				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_milk.png" /><br /><br />
+				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_milk.png" data-inviewport="scale-in" /><br /><br />
 				Made with<br />Cow Milk
 			</div>
 			<div style="text-align: center;">
-				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_rich_ingredients.png" /><br />
+				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_rich_ingredients.png" data-inviewport="scale-in" /><br />
 				Rich ingredients. <br />Premium quality.
 			</div>
 		</div>
 	</div>
 	<br /><br />
-	<div class="container video-section">
+	<div class="container video-section" data-inviewport="appear-left">
 		<div class="row">
-			<div class="col-md-7 col-sm-12" style="height: 50vh;">
+			<div id="video-section-left" class="col-md-7 col-sm-12" style="height: 50vh;">
 				<iframe style="width:100%; height:100%;"
 				src="https://www.youtube.com/embed/FZuIch-Eq1s?autoplay=0&mute=1">
 				</iframe>
@@ -132,7 +133,7 @@
 		</div>
 	</div>
 	<br /><br />
-	<div id="popular-section" class="container">
+	<div id="browse-section" class="container">
 		<div class="hs__wrapper">
 			<div class="hs__header">
 				<h2 class="hs__headline">
@@ -144,77 +145,68 @@
 						<div class="hs__item__image__wrapper">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="some_flavours_icons/chocolate_icon.png" alt="Unsplashed Random"/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Chocolate</span></div>
 					</li>
 					<li class="hs__item">
 						<div class="hs__item__image__wrapper2">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image2" src="some_flavours_icons/strawberry_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Strawberry</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper3">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image3" src="some_flavours_icons/vanilla_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Vanilla</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper4">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image4" src="some_flavours_icons/coffee_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Coffee</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper5">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image5" src="some_flavours_icons/apple_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Apple</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper6">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image6" src="some_flavours_icons/espresso_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Espresso</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper7">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image7" src="some_flavours_icons/mint_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Mint</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper8">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image8" src="some_flavours_icons/litchi_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Litchi</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper9">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image9" src="some_flavours_icons/coconut_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Coconut</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper10">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image10" src="some_flavours_icons/green_apple_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Green Apple</span></div>
 					</li>
 					<li class="hs__item"> 
 						<div class="hs__item__image__wrapper11">
 						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image11" src="some_flavours_icons/hazelnut_icon.png" alt=""/>
 						</div>
-						<div class="hs__item__description"><span class="hs__item__title">Hazelnut</span></div>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="container text-center">
+		<br /><br />
+		<div id="popular-section" class="container text-center">
 			<div class="shell">
 			  <div class="container">
 			    <div class="row">
 			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513"
+			        data-inviewport="scale-in-fast">
 			          <div class="wsk-cp-img">
 			            <img id="some_flavours_items_image_1" src="some_flavours_items/chocolate/1.jpg" alt="Product" class="img-responsive"
 			            />
@@ -230,13 +222,14 @@
 			        </div>
 			      </div>
 			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513"
+			        data-inviewport="scale-in-fast">
 			          <div class="wsk-cp-img">
 		          	<img  id="some_flavours_items_image_2" src="some_flavours_items/chocolate/2.jpg" alt="Product" class="img-responsive"/>
 			          </div>
 			          <div class="wsk-cp-text">
 			            <div class="title-product">
-			              <h3 id="some_flavours_items_title_2">Death By Chocolate</h3>
+			              <h3 id="some_flavours_items_title_2" style="font-size: Pattaya;">Death By Chocolate</h3>
 			            </div>
 			            <div class="card-footer">
 			              <div class="wcf-right"><span class="price">₹750.000</span></div>
@@ -245,7 +238,8 @@
 			        </div>
 			      </div>
 			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513"
+			        data-inviewport="scale-in-fast">
 			          <div class="wsk-cp-img">
 			          	<img  id="some_flavours_items_image_3" src="some_flavours_items/chocolate/3.jpg" alt="Product" class="img-responsive" />
 			          </div>
@@ -260,7 +254,8 @@
 			        </div>
 			      </div>
 			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513"
+			        data-inviewport="scale-in-fast">
 			          <div class="wsk-cp-img">
 			            <img  id="some_flavours_items_image_4" src="some_flavours_items/chocolate/4.jpg" alt="Product" class="img-responsive" 
 />
@@ -276,7 +271,8 @@
 			        </div>
 			      </div>
 			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513"
+			        data-inviewport="scale-in-fast">
 			          <div class="wsk-cp-img">
 			          	<img  id="some_flavours_items_image_5" src="some_flavours_items/chocolate/5.jpg" alt="Product" class="img-responsive" />
 			          </div>
@@ -291,7 +287,8 @@
 			        </div>
 			      </div>
 			      <div class="col-md-4">
-			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513">
+			        <div class="wsk-cp-product" style="background-color: #F4A460; color: #8B4513"
+			        data-inviewport="scale-in-fast">
 			          <div class="wsk-cp-img">
 			          	<img  id="some_flavours_items_image_6" src="some_flavours_items/chocolate/6.jpg" alt="Product" class="img-responsive" />
 			          </div>
@@ -309,6 +306,7 @@
 			</div>
 		</div>
 	</div>
+	<br /><br />
 	<div  id="reviews-section" class="container" style="background-color: #AC3B61;  font-family: Passion One; color: #EDC7B7">
 		<div style="text-align: center;">
 			<h1>
@@ -381,9 +379,9 @@
 			</div>
 		</div>
 	</div>
-		<div style="display: flex; justify-content: center; align-items: center; height: 30vh;">
-			<img src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
-		</div>
+	<div style="display: flex; justify-content: center; align-items: center; height: 30vh;">
+		<img id="pageEndLogo" src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
+	</div>
 	</div>
 	<footer style="background-color: #AC3B61;">
         <div class="container">
@@ -459,158 +457,6 @@
     </footer>
 
 </body>
-<script>
-	const swiper = new Swiper('.swiper', {
-		spaceBetween: 30,
-        effect: "fade",
-        lazyloading: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-	});
-	$(document).ready(function() {
-		$("#chocolate_flavour_button").click(function() {
-			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/chocolate/1.jpg");
-			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/chocolate/2.jpg");
-			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/chocolate/3.jpg");
-			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/chocolate/4.jpg");
-			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/chocolate/5.jpg");
-			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/chocolate/6.jpg");
-			$("#some_flavours_items_title_1").text('Double Chocolate');
-			$("#some_flavours_items_title_2").text('Death By Chocolate');
-			$("#some_flavours_items_title_3").text('Chocolate Gateau Ice Cream');
-			$("#some_flavours_items_title_4").text('Magnum Chocolate Truffle');
-			$("#some_flavours_items_title_5").text('Belgium Chocolate');
-			$("#some_flavours_items_title_6").text('Chocolate Semi Freddo');
-			$('.wsk-cp-product').css('background-color', 
-				'#F4A460');
-			$('.wsk-cp-product').css('color', 
-				'#8B4513');
-		});
-		$("#strawberry_flavour_button").click(function() {
-			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/strawberry/1.jpg");
-			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/strawberry/2.jpg");
-			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/strawberry/3.jpg");
-			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/strawberry/4.jpg");
-			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/strawberry/5.jpg");
-			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/strawberry/6.jpg");
-			$("#some_flavours_items_title_1").text('Strawberry Arctic Roll');
-			$("#some_flavours_items_title_2").text('Pink Dame blanche');
-			$("#some_flavours_items_title_3").text('Parfait');
-			$("#some_flavours_items_title_4").text('Strawberry Poire belle Hélène');
-			$("#some_flavours_items_title_5").text('Cream Bombe glacée');
-			$("#some_flavours_items_title_6").text('Berry Tin roof pie');
-			$('.wsk-cp-product').css('background-color', 
-				'#FF69B4');
-			$('.wsk-cp-product').css('color', 
-				'#FFC0CB');
-		});
-		$("#vanilla_flavour_button").click(function() {
-			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/vanilla/1.jpg");
-			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/vanilla/2.jpeg");
-			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/vanilla/3.jpg");
-			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/vanilla/4.jpg");
-			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/vanilla/5.jpg");
-			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/vanilla/6.jpg");
-			$("#some_flavours_items_title_1").text('Mocha Mud Pie');
-			$("#some_flavours_items_title_2").text('Caramel Creme');
-			$("#some_flavours_items_title_3").text('Vanilla Berry');
-			$("#some_flavours_items_title_4").text('Vanilla Flitz');
-			$("#some_flavours_items_title_5").text('Vanilla Fudge Swirl');
-			$("#some_flavours_items_title_6").text('Rum Raisin');
-			$('.wsk-cp-product').css('background-color', 
-				'#cd853f');
-			$('.wsk-cp-product').css('color', 
-				'#FFFDD0');
-		});
-		$("#coffee_flavour_button").click(function() {
-			$("#some_flavours_items_image_1").attr("src", "some_flavours_items/coffee/1.jpg");
-			$("#some_flavours_items_image_2").attr("src", "some_flavours_items/coffee/2.jpg");
-			$("#some_flavours_items_image_3").attr("src", "some_flavours_items/coffee/3.jpg");
-			$("#some_flavours_items_image_4").attr("src", "some_flavours_items/coffee/4.jpg");
-			$("#some_flavours_items_image_5").attr("src", "some_flavours_items/coffee/5.jpg");
-			$("#some_flavours_items_image_6").attr("src", "some_flavours_items/coffee/6.jpg");
-			$("#some_flavours_items_title_1").text('Coffee n Cookies');
-			$("#some_flavours_items_title_2").text('Coffee Cone');
-			$("#some_flavours_items_title_3").text('Coffee Chips');
-			$("#some_flavours_items_title_4").text('Coffee and Creme');
-			$("#some_flavours_items_title_5").text('Coffee Dough');
-			$("#some_flavours_items_title_6").text('Cocoa Cobbler');
-			$('.wsk-cp-product').css('background-color', 
-				'#8B4513');
-			$('.wsk-cp-product').css('color', 
-				'#FFFDD0');
-		});
-	});
-var instance = $(".hs__wrapper");
-  $.each( instance, function(key, value) {
-      
-    var arrows = $(instance[key]).find(".arrow"),
-        prevArrow = arrows.filter('.arrow-prev'),
-        nextArrow = arrows.filter('.arrow-next'),
-        box = $(instance[key]).find(".hs"), 
-        x = 0,
-        mx = 0,
-        maxScrollWidth = box[0].scrollWidth - (box[0].clientWidth / 2) - (box.width() / 2);
-
-    $(arrows).on('click', function() {
-        
-      if ($(this).hasClass("arrow-next")) {
-        x = ((box.width() / 2)) + box.scrollLeft() - 10;
-        box.animate({
-          scrollLeft: x,
-        })
-      } else {
-        x = ((box.width() / 2)) - box.scrollLeft() -10;
-        box.animate({
-          scrollLeft: -x,
-        })
-      }
-        
-    });
-      
-    $(box).on({
-      mousemove: function(e) {
-        var mx2 = e.pageX - this.offsetLeft;
-        if(mx) this.scrollLeft = this.sx + mx - mx2;
-      },
-      mousedown: function(e) {
-        this.sx = this.scrollLeft;
-        mx = e.pageX - this.offsetLeft;
-      },
-      scroll: function() {
-        toggleArrows();
-      }
-    });
-
-    $(document).on("mouseup", function(){
-      mx = 0;
-    });
-    
-    function toggleArrows() {
-      if(box.scrollLeft() > maxScrollWidth - 10) {
-          // disable next button when right end has reached 
-          nextArrow.addClass('disabled');
-        } else if(box.scrollLeft() < 10) {
-          // disable prev button when left end has reached 
-          prevArrow.addClass('disabled')
-        } else{
-          // both are enabled
-          nextArrow.removeClass('disabled');
-          prevArrow.removeClass('disabled');
-        }
-    }
-    
-  });
+<script src="js/index.js">
 </script>
 </html>
-

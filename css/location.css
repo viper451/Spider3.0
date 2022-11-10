@@ -88,16 +88,6 @@ section {
     margin: 0 auto;
 }
 
-/*****************/
-
-/* @media(max-width: 992px){
-    section{
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-   
-} */
-
 @media(max-width: 863px){
     .checkpoint1{
     font-size: 23px;
@@ -114,7 +104,7 @@ section {
 
 }
 
- /* FOR FIRST CONTENT  */
+ /* Initial Content  */
 @media(max-width: 681px){
     .checkpoint1{
     font-size: 18px;
@@ -172,6 +162,31 @@ section {
    }
 }
 
-/* 
-IMAGE ANIMATION */
+/* Base */
 
+#pageEndLogo:hover {
+  transition-duration: 1s;
+  transform: scale(1.2);
+  position:initial;
+  z-index:1;
+}
+
+[data-inviewport="appear-left"] {
+}
+
+[data-inviewport="appear-left"].is-inViewport { 
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.nav-item:hover {
+    background-color: white;
+}
