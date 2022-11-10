@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spider Scoop - Contact Us</title>
+    <link rel = "icon" href = 
+  "./Icons/logo.png"
+      type = "image/x-icon">
     <link rel="stylesheet" href="css/contactus.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <!-- Bootstrap -->
@@ -24,7 +27,7 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
-  <body>
+  <body style="background-color: #EDC7B7">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light w-100 pt-3" 
     style="z-index: 2; background-color: #AC3B61;">
@@ -58,52 +61,47 @@
         </form>
       </div>
     </nav>
-    <div class="box-container" style="background-color: #e7437a; color: #EDC7B7;">
+    <div class="box-container" style="color: #EDC7B7;">
       <div class="form">
-        <div class="contact-info"  style="background-color: #ff3075;" >
-          <h3 class="title" style="color: #e4a98f; ">Let's connect</h3>
-          <p class="text" style="color: #e4a98f;">
+        <div class="contact-info"  style="background-color: #AC3B61;" >
+          <h3 class="title" style="color: #EDC7B7; ">Let's connect</h3>
+          <p class="text" style="color: #EDC7B7;">
             <b>
             Be the first customer to recieve update and notification.<br>
             Our aim is to create memories and enlighten happiness through amazing  ice cream
             at a place where happiness never melts™.
-
             </b>
           </p>
-
           <div class="info">
             <div class="information">
-             
-              <p style="color: #e4a98f;"><b>21 Elf Street , Mumbai 401107</b></p>
+              <p style="color: #EDC7B7;"><b>21 Elf Street , Mumbai 401107</b></p>
             </div>
             <div class="information">
-              
-              <p style="color: #e4a98f; "><b>icecream@gmail.com</b></p>
+              <p style="color: #EDC7B7; "><b>icecream@gmail.com</b></p>
             </div>
             <div class="information">
-              
-              <p style="color: #e4a98f; "><b>+91-908-246-6221</b></p>
+              <p style="color: #EDC7B7; "><b>+91-908-246-6221</b></p>
             </div>
           </div>
-
           <div class="social-media">
-            <p style="color: #e4a98f; "><b>Connect with us :</b></p>
+            <p style="color: #AC3B61; "><b>Connect with us :</b></p>
             <div class="social-icons">
               <a href="#">
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter" style="color: #AC3B61; background-color: #EDC7B7; padding: 5px;"></i>
               </a>
               <a href="#">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram" style="color: #AC3B61; background-color: #EDC7B7; padding: 5px;"></i>
               </a>
               <a href="#">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f" style="color: #AC3B61; background-color: #EDC7B7; padding: 5px;"></i>
               </a>
               <a href="#">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in" style="color: #AC3B61; background-color: #EDC7B7; padding: 5px;"></i>
               </a>
-            </div><br>
-            <div class="credit" style="color: #e4a98f;"><b>Connect with us on Discord </b><span style="color:#315bf7"><i class="fa-brands fa-discord"></i></span></div>
-            <div class="credit" style="color: #e4a98f; "><b>Made with love from our heart to your home</b> <div class="icecream"><i class="fa-sharp fa-solid fa-ice-cream"></i></div></div>
+            </div>
+            <br />
+            <div class="credit" style="color: #EDC7B7;"><b>Connect with us on Discord </b><span style="color:#315bf7"><i class="fa-brands fa-discord"></i></span></div>
+            <div class="credit" style="color: #EDC7B7; "><b>Made with love from our heart to your home</b> <div class="icecream"><i class="fa-sharp fa-solid fa-ice-cream"></i></div></div>
           </div>
         </div>
 
@@ -112,7 +110,7 @@
           <span class="circle two"></span>
 
           <form action="index.html" autocomplete="off">
-            <h3 class="title" style="color:  #e7437a;"><b>Contact us</b></h3>
+            <h3 class="title" style="color: #EDC7B7;"><b>Contact us</b></h3>
             <div class="input-container" >
               <input type="text" name="name" class="input" />
               <label for=""> <i class="fa-solid fa-user"></i> &nbsp; Username</label>
@@ -128,19 +126,22 @@
               <label for=""><i class="fa-solid fa-phone"></i>&nbsp;Phone</label>
               <span><b>Phone</b></span>
             </div>
-            <div class="input-container textarea" style="color:  #e7437a;">
+            <div class="input-container textarea" style="color: #EDC7B7;">
               <textarea name="message" class="input"></textarea>
               <label for=""><i class="fa-solid fa-message"></i> &nbsp;Message</label>
               <span><b>Message</b></span>
             </div>
-            <input type="submit" value="Send" class="btn" />
+            <input style="color: white; background-color: #AC3B61;" type="submit" value="Send" class="btn" />
           </form>
         </div>
       </div>
     </div>
     </div>
       <div style="display: flex; justify-content: center; align-items: center; height: 30vh;">
-        <img id="pageEndLogo" src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
+        <picture>
+          <source id="pageEndLogo" srcSet="Icons/paintlogo.webp" type="image/webp" style="height: 15vh; width: 15vh;"/>
+          <img id="pageEndLogo" src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
+        </picture>
       </div>
     </div>
     <footer style="background-color: #AC3B61;">
@@ -184,7 +185,6 @@
                         <li><a><b style="color: #EDC7B7;">Sponsorships & Donations</b></a></li>
                         <li><a><b style="color: #EDC7B7;">Submit a flavour</b></a></li>
                         <li><a href="contactus.html" target="_blank"><b style="color: #EDC7B7;">Let's connect</b></a></li>
-                       
                     </ul>
                     </div>                    
                 </div>

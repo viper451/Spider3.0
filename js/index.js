@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper', {
       },
 });
 $(document).ready(function() {
-	$("#chocolate_flavour_button").click(function() {
+	$("#chocolate_flavour_icon").click(function() {
 		$("#some_flavours_items_image_1").attr("src", "some_flavours_items/chocolate/1.jpg");
 		$("#some_flavours_items_image_2").attr("src", "some_flavours_items/chocolate/2.jpg");
 		$("#some_flavours_items_image_3").attr("src", "some_flavours_items/chocolate/3.jpg");
@@ -34,7 +34,7 @@ $(document).ready(function() {
 		$('.wsk-cp-product').css('color', 
 			'#8B4513');
 	});
-	$("#strawberry_flavour_button").click(function() {
+	$("#strawberry_flavour_icon").click(function() {
 		$("#some_flavours_items_image_1").attr("src", "some_flavours_items/strawberry/1.jpg");
 		$("#some_flavours_items_image_2").attr("src", "some_flavours_items/strawberry/2.jpg");
 		$("#some_flavours_items_image_3").attr("src", "some_flavours_items/strawberry/3.jpg");
@@ -52,7 +52,7 @@ $(document).ready(function() {
 		$('.wsk-cp-product').css('color', 
 			'#FFC0CB');
 	});
-	$("#vanilla_flavour_button").click(function() {
+	$("#vanilla_flavour_icon").click(function() {
 		$("#some_flavours_items_image_1").attr("src", "some_flavours_items/vanilla/1.jpg");
 		$("#some_flavours_items_image_2").attr("src", "some_flavours_items/vanilla/2.jpeg");
 		$("#some_flavours_items_image_3").attr("src", "some_flavours_items/vanilla/3.jpg");
@@ -70,7 +70,7 @@ $(document).ready(function() {
 		$('.wsk-cp-product').css('color', 
 			'#FFFDD0');
 	});
-	$("#coffee_flavour_button").click(function() {
+	$("#coffee_flavour_icon").click(function() {
 		$("#some_flavours_items_image_1").attr("src", "some_flavours_items/coffee/1.jpg");
 		$("#some_flavours_items_image_2").attr("src", "some_flavours_items/coffee/2.jpg");
 		$("#some_flavours_items_image_3").attr("src", "some_flavours_items/coffee/3.jpg");

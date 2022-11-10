@@ -36,7 +36,8 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light w-100 pt-3" 
 	style="z-index: 2; background-color: #AC3B61;">
-		<h1 style="color: #EDC7B7; font-family: Passion One;"><img src="Icons/logo.png" width="100" height="90" />
+		<h1 style="color: #EDC7B7; font-family: Passion One;">
+			<img src="Icons/logo.png" width="100" height="90" />
 		</h1>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -66,33 +67,44 @@
 			</form>
 		</div>
 	</nav>
-	<!-- <div style="height: 10vh; text-align: center; padding-top: 3vh;">
-		<h1 style="font-family: Passion One; color: #AC3B61;">
-			<strong>Our Coolest Scoops</strong>
-		</h1>
-	</div> -->
 	<div class="swiper">
 		<div id="trending-section" class="swiper-wrapper" style="height: 60vh;">
 			<div class="swiper-slide">
-				<img src="Carousel_Trending_Ice_creams/Image 1.webp" style="width:100%; height:100%;"/>
+				<picture>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 1.avif" type="image/avif" style="width:100%; height:100%;"/>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 1.webp" type="image/webp" style="width:100%; height:100%;"/>
+					<img src="Carousel_Trending_Ice_creams/Image 1.jpg" style="width:100%; height:100%;"/>
+				</picture>
 				<figcaption style="font-family: Passion One;">
 					<h3>Sundae Delight</h3>
 				</figcaption>
 			</div>
 			<div class="swiper-slide">
-				<img src="Carousel_Trending_Ice_creams/Image 2.jpg" style="width:100%; height:100%;"/>
+				<picture>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 2.avif" type="image/avif" style="width:100%; height:100%;"/>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 2.webp" type="image/webp" style="width:100%; height:100%;"/>
+					<img src="Carousel_Trending_Ice_creams/Image 2.jpg" style="width:100%; height:100%;"/>
+				</picture>
 				<figcaption style="font-family: Passion One;">
 					<h3>Kidz Kone</h3>
 				</figcaption>
 			</div>
 			<div class="swiper-slide">
-				<img src="Carousel_Trending_Ice_creams/Image 3.webp" style="width:100%; height:100%;"/>
+				<picture>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 3.avif" type="image/avif" style="width:100%; height:100%;"/>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 3.webp" type="image/webp" style="width:100%; height:100%;"/>
+					<img src="Carousel_Trending_Ice_creams/Image 3.jpg" style="width:100%; height:100%;"/>
+				</picture>
 				<figcaption style="font-family: Passion One;">
 					<h3>Choco Sandwhich</h3>
 				</figcaption>
 			</div>
 			<div class="swiper-slide">
-				<img src="Carousel_Trending_Ice_creams/Image 4.jpg" style="width:100%; height:100%;"/>
+				<picture>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 4.avif" type="image/avif" style="width:100%; height:100%;"/>
+					<source srcSet="Carousel_Trending_Ice_creams/Image 4.webp" type="image/webp" style="width:100%; height:100%;"/>
+					<img src="Carousel_Trending_Ice_creams/Image 4.jpg" style="width:100%; height:100%;"/>
+				</picture>
 				<figcaption style="font-family: Passion One;">
 					<h3>Sweet Cup</h3>
 				</figcaption>
@@ -107,16 +119,26 @@
 	justify-content: center; align-items: center;">
 		<div style="width: 100%; display: flex; justify-content: space-evenly; font-family: Passion One; color: #123C69;">
 			<div style="text-align: center;">
-				<img class="what-makes-us-special-image" src="what_makes_us_special_images/veg.png" data-inviewport="scale-in" />
+				<picture>
+					<source class ="what-makes-us-special-image"srcSet="what_makes_us_special_images/veg.webp" type="image/webp"  data-inviewport="scale-in"/>
+					<img class="what-makes-us-special-image" src="what_makes_us_special_images/veg.png" data-inviewport="scale-in" />
+				</picture>
 				<br /><br />
 				100% Vegetarian
 			</div>
 			<div style="text-align: center;">
-				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_milk.png" data-inviewport="scale-in" /><br /><br />
+				<picture>
+					<source class ="what-makes-us-special-image" srcSet="what_makes_us_special_images/made_with_milk.webp" type="image/webp"  data-inviewport="scale-in"/>
+					<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_milk.png" data-inviewport="scale-in" />
+				</picture>
+				<br /><br />
 				Made with<br />Cow Milk
 			</div>
 			<div style="text-align: center;">
-				<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_rich_ingredients.png" data-inviewport="scale-in" /><br />
+				<picture>
+					<source class ="what-makes-us-special-image" srcSet="what_makes_us_special_images/made_with_rich_ingredients.webp" type="image/webp"  data-inviewport="scale-in"/>
+					<img class="what-makes-us-special-image" src="what_makes_us_special_images/made_with_rich_ingredients.png" data-inviewport="scale-in" /><br />
+				</picture>
 				Rich ingredients. <br />Premium quality.
 			</div>
 		</div>
@@ -126,7 +148,7 @@
 		<div class="row">
 			<div id="video-section-left" class="col-md-7 col-sm-12" style="height: 50vh;">
 				<iframe style="width:100%; height:100%;"
-				src="https://www.youtube.com/embed/FZuIch-Eq1s?autoplay=0&mute=1">
+				src="https://www.youtube.com/embed/FZuIch-Eq1s?autoplay=1&mute=1">
 				</iframe>
 			</div>
 			<div id="video-section-right" class="col-md-5 col-sm-12" style="font-family: Passion One; color: #AC3B61;">
@@ -135,88 +157,120 @@
 		</div>
 	</div>
 	<br /><br />
-	<div id="browse-section" class="container">
+	<div id="browse-section" class="container" data-inviewport="scale-in-fast">
 		<div class="hs__wrapper">
-			<div class="hs__header">
-				<h2 class="hs__headline">
-				</h2>
-				<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
-				</div>
-				<ul class="hs">
-			
-					<li class="hs__item"> 
-					
-						<div class="hs__item__image__wrapper">
-						
-						
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image" src="some_flavours_icons/chocolate_icon.png" alt="Unsplashed Random"/>
-
-						</div>
-						<b style="padding: 3.2%;"> CHOCOLATE</b>
-					</li>
-				
-					<li class="hs__item">
-						<div class="hs__item__image__wrapper2">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image2" src="some_flavours_icons/strawberry_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">STRAWBERRY</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper3">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image3" src="some_flavours_icons/vanilla_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">VANILLA</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper4">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image4" src="some_flavours_icons/coffee_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;"> COFFEE</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper5">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image5" src="some_flavours_icons/apple_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">APPLE</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper6">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image6" src="some_flavours_icons/espresso_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">ESPRESSO</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper7">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image7" src="some_flavours_icons/mint_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">MINT</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper8">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image8" src="some_flavours_icons/litchi_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">LITCHI</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper9">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image9" src="some_flavours_icons/coconut_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">COCONUT</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper10">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image10" src="some_flavours_icons/green_apple_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">GREEN APPLE</b>
-					</li>
-					<li class="hs__item"> 
-						<div class="hs__item__image__wrapper11">
-						<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")--><img class="hs__item__image11" src="some_flavours_icons/hazelnut_icon.png" alt=""/>
-						</div>
-						<b style="padding: 3.2%;">HAZLENUT</b>				
-					</li>
-
-				</ul>
+			<ul class="hs">
+				<li id="chocolate_flavour_icon" class="hs__item"> 
+					<div class="hs__item__image__wrapper">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/chocolate_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/chocolate_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;"> CHOCOLATE</b>
+				</li>
+				<li id="strawberry_flavour_icon" class="hs__item">
+					<div class="hs__item__image__wrapper2">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/strawberry_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/strawberry_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">STRAWBERRY</b>
+				</li>
+				<li id="vanilla_flavour_icon" class="hs__item"> 
+					<div class="hs__item__image__wrapper3">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source class="hs__item__image" srcSet="some_flavours_icons/vanilla_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/vanilla_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">VANILLA</b>
+				</li>
+				<li id="coffee_flavour_icon" class="hs__item"> 
+					<div class="hs__item__image__wrapper4">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/coffee_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/coffee_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;"> COFFEE</b>
+				</li>
+				<li class="hs__item"> 
+					<div class="hs__item__image__wrapper5">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/apple_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/apple_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">APPLE</b>
+				</li>
+				<li class="hs__item"> 
+					<div class="hs__item__image__wrapper6">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/ESPRESSO_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/ESPRESSO_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">ESPRESSO</b>
+				</li>
+				<li class="hs__item"> 
+					<div class="hs__item__image__wrapper7">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/MINT_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/MINT_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">MINT</b>
+				</li>
+				<li class="hs__item"> 
+					<div class="hs__item__image__wrapper8">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/LITCHI_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/LITCHI_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">LITCHI</b>
+				</li>
+				<li class="hs__item"> 
+					<div class="hs__item__image__wrapper9">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/COCONUT_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/COCONUT_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">COCONUT</b>
+				</li>
+				<li class="hs__item"> 
+					<div class="hs__item__image__wrapper10">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/GREEN_APPLE_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/GREEN_APPLE_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">GREEN APPLE</b>
+				</li>
+				<li class="hs__item"> 
+					<div class="hs__item__image__wrapper11">
+					<!--img.hs__item__image(src="https://source.unsplash.com/random/300×300/?album&sig"+[n]+[i], alt="")-->
+					<picture>
+						<source  class="hs__item__image" srcSet="some_flavours_icons/hazelnut_icon.webp" type="image/webp" />
+						<img class="hs__item__image" src="some_flavours_icons/hazelnut_icon.png" alt="Unsplashed Random"/>
+					</picture>
+					</div>
+					<b style="padding: 3.2%;">HAZLENUT</b>				
+				</li>
+			</ul>
 			</div>
 		</div>
 		<br /><br />
@@ -400,7 +454,10 @@
 		</div>
 	</div>
 	<div style="display: flex; justify-content: center; align-items: center; height: 30vh;">
-		<img id="pageEndLogo" src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
+		<picture>
+          <source id="pageEndLogo" srcSet="Icons/paintlogo.webp" type="image/webp" style="height: 15vh; width: 15vh;"/>
+          <img id="pageEndLogo" src="Icons/paintlogo.png" style="height: 15vh; width: 15vh;"/>
+        </picture>
 	</div>
 	</div>
 	<footer style="background-color: #AC3B61;">
