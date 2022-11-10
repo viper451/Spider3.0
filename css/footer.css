@@ -22,6 +22,13 @@ footer {
   font-size: 20px;
   margin-right: 10px;
 }
+
+.card-area-contactusfooter i{
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 10px; 
+}
+
 .card-area i:hover {
   color: rgb(252, 189, 0);
   }
